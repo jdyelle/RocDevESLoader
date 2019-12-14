@@ -1,0 +1,24 @@
+{
+  "settings" : {
+    "number_of_shards" : 1,
+    "number_of_replicas" : 1,
+    "index.mapping.ignore_malformed": true
+  },
+  "mappings":{
+    "properties":{
+      "TripDuration":{"type": "integer"},
+      "Start.Time":{"type": "date"},
+      "Start.StationID":{"type": "integer"},
+      "Start.Name": {"type": "keyword"},
+      "Start.Location":{"type": "geo_point"},
+      "Finish.Time":{"type": "date"},
+      "Finish.StationID":{"type": "integer"},
+      "Finish.Name": {"type": "keyword"},
+      "Finish.Location":{"type": "geo_point"},
+      "BikeID":{"type": "integer"},
+      "UserType": {"type": "keyword"},
+      "BirthYear": {"type": "integer"},
+      "Gender": {"type": "keyword"}      
+    }
+  }
+}
